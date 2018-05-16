@@ -45,8 +45,8 @@ return [
     |
     */
 
-    'skin' => 'blue',
-
+    //'skin' => 'blue',
+    'skin' => 'green',
     /*
     |--------------------------------------------------------------------------
     | Layout
@@ -113,6 +113,13 @@ return [
             'text' => 'Blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
+        ],
+        [
+            'text'        => 'Županije',
+            'url'         => 'admin/pages',
+            'icon'        => 'angellist',
+            'label'       => 21,
+            'label_color' => 'success',
         ],
         [
             'text'        => 'Pages',
