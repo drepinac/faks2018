@@ -19,6 +19,10 @@ Route::get('/fakultet', function () {
     return view('fakultet');
 })->name('fakultet');
 
+Route::get('/admin', function () {
+    return view('admin/dashboard');
+})->name('admin');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
