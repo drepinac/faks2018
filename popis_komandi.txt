@@ -1,0 +1,23 @@
+https://getcomposer.org/download/
+
+$ php composer.phar create-project --prefer-dist laravel/laravel faks2018
+
+php artisan package:discover
+Discovered Package: fideloper/proxy
+Discovered Package: laravel/tinker
+Discovered Package: nunomaduro/collision
+Package manifest generated successfully.
+> @php artisan key:generate
+Application key [base64:sONMXRNhIBbTQV7evSNfZMmTM0dwtvgquFq5vYEmZg0=] set succes
+sfully.
+
+
+$ php artisan -V
+Laravel Framework 5.6.21
+
+office@ALGOS-03-04 MINGW64 ~/Code/faks2018
+$ php artisan serve
+
+ php artisan make:auth
+
+php artisan migrate:fresh
