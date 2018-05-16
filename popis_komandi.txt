@@ -21,3 +21,8 @@ $ php artisan serve
  php artisan make:auth
 
 php artisan migrate:fresh
+
+u app/providers/AppServiceProvider.php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\ServiceProvider;
