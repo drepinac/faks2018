@@ -26,3 +26,5 @@ u app/providers/AppServiceProvider.php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+
+ php artisan make:controller ZupanijaController --resource --model=Zupanija
