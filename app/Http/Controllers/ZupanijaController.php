@@ -14,7 +14,12 @@ class ZupanijaController extends Controller
      */
     public function index()
     {
-        //
+        $zup = Zupanija::all();
+//        dd($zup);
+        echo '<h1>Sve županije</h1>';
+        foreach($zup as $z){
+        echo $z->naziv.'<br/>';}
+        //return "Index zupanija"
     }
 
     /**
@@ -24,7 +29,7 @@ class ZupanijaController extends Controller
      */
     public function create()
     {
-        //
+    return"sve zupanije";
     }
 
     /**
@@ -41,7 +46,7 @@ class ZupanijaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Zupanija  $zupanija
+     * @param  Zupanija  $zupanija
      * @return \Illuminate\Http\Response
      */
     public function show(Zupanija $zupanija)
@@ -52,7 +57,7 @@ class ZupanijaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Zupanija  $zupanija
+     * @param  Zupanija  $zupanija
      * @return \Illuminate\Http\Response
      */
     public function edit(Zupanija $zupanija)
@@ -64,7 +69,7 @@ class ZupanijaController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Zupanija  $zupanija
+     * @param  Zupanija  $zupanija
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Zupanija $zupanija)
@@ -75,7 +80,7 @@ class ZupanijaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Zupanija  $zupanija
+     * @param  Zupanija  $zupanija
      * @return \Illuminate\Http\Response
      */
     public function destroy(Zupanija $zupanija)

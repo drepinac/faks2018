@@ -10,7 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::resource('zupanija','ZupanijaController');
+        
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,10 +23,6 @@ Route::get('/fakultet', function () {
 Route::get('/admin', function () {
     return view('admin/dashboard');
 })->name('admin');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
